@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Gopi Dress | Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<section id="loginView" class="login-wrap">
+  <form id="loginForm" class="login-box">
+    <h1>Gopi Dress</h1>
+    <p>Admin Login</p>
+    <label>Username<input id="username" autocomplete="username" required></label>
+    <label>Password<input id="password" type="password" autocomplete="current-password" required></label>
+    <p class="err" id="loginErr"></p>
+    <button class="btn" type="submit">Login</button>
+  </form>
+</section>
+
+<!-- DASHBOARD -->
+<div id="dashView" hidden>
+  <header class="bar">
+    <h1>Gopi Dress <small>Admin</small></h1>
+    <div><button class="btn light" id="refreshBtn">↻ Refresh</button> <button class="btn light" id="logoutBtn">Logout</button></div>
+  </header>
+  <main class="wrap">
+    <div class="tabs" id="tabs"></div>
+    <input class="search" id="search" placeholder="Search by Order ID, name or mobile…">
+    <p class="muted" id="info"></p>
+    <div id="orders"></div>
+    <div class="pager" id="pager"></div>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="admin.js"></script>
+</body>
+</html>
