@@ -3,7 +3,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const Order = require("../models/Order");
 const requireAdmin = require("../middleware/auth");
-const { STATUSES } = require("../models/Order");
+const { STATUSES } = require("../models/Order2");
 
 // ===============================
 // ADMIN LOGIN
